@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1100px; } }
+
+header {
+  border-bottom: 1px solid #dadada; }
+  header .header-container {
+    height: 100px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between; }
+    header .header-container .header-logo {
+      height: 50px; }
+    header .header-container .header-contact {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between; }
+      header .header-container .header-contact .header-contact-mail, header .header-container .header-contact .header-contact-phone {
+        height: 50px; }
+        header .header-container .header-contact .header-contact-mail div, header .header-container .header-contact .header-contact-phone div {
+          display: inline-block;
+          height: 100%; }
+        header .header-container .header-contact .header-contact-mail p, header .header-container .header-contact .header-contact-phone p {
+          display: inline-block;
+          color: #767676;
+          font-size: 11px; }
+          header .header-container .header-contact .header-contact-mail p a, header .header-container .header-contact .header-contact-phone p a {
+            text-decoration: none;
+            transition: color .3s;
+            color: #F0542D;
+            font-size: 17px;
+            font-weight: 500; }
+            header .header-container .header-contact .header-contact-mail p a:hover, header .header-container .header-contact .header-contact-phone p a:hover {
+              color: #767676; }
+
+.nav-list {
+  height: 50px; }
+  .nav-list li {
+    display: inline-block;
+    padding: 3px 15px 0 15px;
+    height: 100%;
+    box-sizing: border-box; }
+    .nav-list li:hover, .nav-list li:focus, .nav-list li.active {
+      color: #F0542D;
+      border-bottom: 3px solid #F0542D; }
+    .nav-list li a {
+      color: #4A4F55;
+      text-decoration: none;
+      line-height: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase; }
+      .nav-list li a:visited {
+        color: #4A4F55; }
+
+.slick-prev, .slick-next {
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  background: none;
+  position: absolute;
+  top: calc(50% - 10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background .3s ease,border .3s ease;
+  color: #a4a4a4;
+  outline: none;
+  z-index: 20; }
+  .slick-prev:hover, .slick-next:hover {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0.2) !important; }
+
+.slick-prev {
+  left: 40px; }
+
+.slick-next {
+  right: 40px; }
+
+footer {
+  position: relative;
+  background: url("/images/footer-bg.jpg") no-repeat center bottom scroll;
+  background-color: #34373c;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  background-size: auto;
+  padding: 20px 0 30px 0; }
+  footer h2 {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 5px;
+    margin-bottom: 10px; }
+  footer .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end; }
+    footer .container .contacts {
+      width: 25%;
+      display: inline-block;
+      font-size: 12px;
+      color: #ffffff !important;
+      font-weight: 300; }
+      footer .container .contacts h2 {
+        font-size: 14px; }
+      footer .container .contacts p {
+        margin: 10px 0; }
+      footer .container .contacts p.phone {
+        margin-top: 25px; }
+    footer .container .form {
+      width: 25%;
+      display: inline-block; }
+      footer .container .form input, footer .container .form textarea {
+        background: none;
+        color: #D8D8D8;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        margin: 5px 0 20px 0;
+        width: 100%;
+        outline: none;
+        box-shadow: none !important;
+        font-size: 14px;
+        border-radius: 0px;
+        padding: 10px;
+        font-weight: 200;
+        transition: all .2s ease;
+        resize: none; }
+        footer .container .form input:hover, footer .container .form textarea:hover {
+          border: 1px solid rgba(255, 255, 255, 0.4); }
+        footer .container .form input:focus, footer .container .form textarea:focus {
+          border: 1px solid #F0542D !important; }
+
+/*# sourceMappingURL=style.css.map */

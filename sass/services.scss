@@ -1,0 +1,15 @@
+@import "constants";
+@import "grid";
+@import "mixins";
+
+.services {
+  padding-bottom: 60px;
+}
+.service-header {
+  position: relative;
+  padding: 60px 0 25px 0;
+  text-align: center;
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 30px;
+  color: $section_header_color;
+}

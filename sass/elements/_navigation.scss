@@ -1,0 +1,26 @@
+@import "../mixins";
+@import "../constants";
+.nav-list {
+  height: 50px;
+  li {
+    display: inline-block;
+    padding: 3px 15px 0 15px;
+    height: 100%;
+    box-sizing: border-box;
+    &:hover,&:focus,&.active {
+      color: $orange_text;
+      border-bottom: 3px solid $orange_text;
+    }
+    a {
+      color: #4A4F55;
+      text-decoration: none;
+      line-height: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      &:visited {
+        color: #4A4F55;
+      }
+    }
+  }
+}

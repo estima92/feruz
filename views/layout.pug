@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+    script(type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
+    link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
+    block singlePageCSS
+  body
+    include elements/header
+    include elements/navigation
+    block content
+    include elements/footer
+    script.
+        $('.carousel').slick({
+            prevArrow: '<button type="button" class="slick-prev">❮</button>',
+            nextArrow: '<button type="button" class="slick-next">❯</button>'
+        });

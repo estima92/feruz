@@ -1,0 +1,54 @@
+@import "constants";
+@import "grid";
+@import "mixins";
+.products {
+  padding-bottom: 60px;
+}
+.product {
+  .product-header {
+    position: relative;
+    padding: 60px 0 25px 0;
+    text-align: center;
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 30px;
+    color: $section_header_color;
+  }
+  div {
+    @include flexbox();
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .product-desc {
+      display: inline-block;
+      width: 40%;
+    }
+    .table {
+      display: inline-block;
+      width: 60%;
+      table {
+        width: 100%;
+        text-align: center;
+        thead {
+          tr {
+            height: 30px;
+            vertical-align: top;
+          }
+
+        }
+      }
+    }
+  }
+  a.donwload-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: $orange_text;
+    border: 2px solid $orange_text;
+    padding: 10px 20px;
+    transition: all .3s;
+    &:hover {
+      background: $orange_text;
+      color: white;
+    }
+  }
+}
+

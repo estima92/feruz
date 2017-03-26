@@ -1,0 +1,44 @@
+@import "../mixins";
+@import "../constants";
+header {
+  border-bottom: 1px solid #dadada;
+  .header-container {
+    height: 100px;
+    @include flexbox();
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    .header-logo {
+      height: 50px;
+    }
+    .header-contact {
+      @include flexbox();
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+      .header-contact-mail, .header-contact-phone {
+        height: 50px;
+        div {
+          display: inline-block;
+          height: 100%;
+        }
+        p {
+          display: inline-block;
+          color: $gray_text;
+          font-size: 11px;
+          a {
+            text-decoration: none;
+            transition: color .3s;
+            color: $orange_text;
+            font-size: 17px;
+            font-weight: 500;
+            &:hover {
+              color: $gray_text;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+.idea
+public/stylesheets
+.sass-cache
+node_modules

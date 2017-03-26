@@ -1,0 +1,10 @@
+footer {
+  height: 500px;
+  position: relative;
+  background: url("/images/footer-bg.jpg") no-repeat center bottom scroll;
+  background-color: #34373c;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  background-size: auto; }
+
+/*# sourceMappingURL=footer.css.map */

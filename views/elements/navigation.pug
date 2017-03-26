@@ -1,0 +1,14 @@
+block navigation
+  nav
+    .container.nav-container
+      ul.nav-list
+        li(class= current == "index" ? "active"  : "")
+          a(href="/") Главная
+        li(class= current == "products" ? "active"  : "")
+          a(href="/products") Продукция
+        li(class= current == "services" ? "active"  : "")
+          a(href="/services") Услуги
+        li(class= current == "about" ? "active"  : "")
+          a(href="#about") О нас
+        li(class= current == "contacts" ? "active"  : "")
+          a(href="#contacts") Контакты
