@@ -40,7 +40,10 @@
       width: 100%;
       text-align: center; }
       .product div .table table thead tr {
-        height: 30px;
+        height: 50px;
+        vertical-align: top; }
+      .product div .table table tbody tr {
+        height: 50px;
         vertical-align: top; }
 .product a.donwload-link {
   display: inline-block;
