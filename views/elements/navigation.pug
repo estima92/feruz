@@ -1,5 +1,5 @@
 block navigation
-  nav
+  nav#navbar
     .container.nav-container
       ul.nav-list
         li(class= current == "index" ? "active"  : "")
@@ -9,6 +9,6 @@ block navigation
         li(class= current == "services" ? "active"  : "")
           a(href="/services") Услуги
         li(class= current == "about" ? "active"  : "")
-          a(href="#about") О нас
+          a#about-link(href="/about") О нас
         li(class= current == "contacts" ? "active"  : "")
-          a(href="#contacts") Контакты
+          a(href="/contacts") Контакты

@@ -18,14 +18,19 @@ header {
       justify-content: space-between;
       .header-contact-mail, .header-contact-phone {
         height: 50px;
+        padding-right: 20px;
         div {
           display: inline-block;
           height: 100%;
         }
+        i {
+          color: $orange_text;
+          padding-right: 10px;
+        }
         p {
           display: inline-block;
           color: $gray_text;
-          font-size: 11px;
+          font-size: 16px;
           a {
             text-decoration: none;
             transition: color .3s;

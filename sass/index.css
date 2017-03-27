@@ -2,30 +2,66 @@
   height: 500px; }
   .carousel div {
     height: 100%; }
+    .carousel div h1 {
+      color: white;
+      font-size: 60px;
+      text-align: center; }
     .carousel div.first-slide {
       background-color: transparent;
       background-repeat: no-repeat;
       background-image: url("/images/bg_slider-clean1.jpg");
       background-size: cover;
-      background-position: center center; }
+      background-position: center center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center; }
     .carousel div.second-slide {
       background-color: transparent;
       background-repeat: no-repeat;
       background-image: url("/images/slider2.png");
       background-size: cover;
-      background-position: center center; }
+      background-position: center center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center; }
     .carousel div.third-slide {
       background-color: transparent;
       background-repeat: no-repeat;
       background-image: url("/images/slider3.png");
       background-size: cover;
-      background-position: center center; }
+      background-position: center center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center; }
     .carousel div.fourth-slide {
       background-color: transparent;
       background-repeat: no-repeat;
       background-image: url("/images/slider4.png");
       background-size: cover;
-      background-position: center center; }
+      background-position: center center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center; }
 
 .section-header {
   position: relative;
@@ -104,6 +140,7 @@
 
 .services article {
   display: inline-block;
+  vertical-align: top;
   width: 33%;
   padding: 20px;
   box-sizing: border-box; }

@@ -1,0 +1,48 @@
+.container {
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1100px; } }
+
+.map {
+  height: 300px; }
+
+.contact-header {
+  position: relative;
+  padding: 60px 0 25px 0;
+  text-align: center;
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 30px;
+  color: #364352; }
+
+.contacts article {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; }
+  .contacts article i {
+    color: #F0542D;
+    margin-bottom: 5px; }
+  .contacts article p {
+    text-align: center;
+    color: #767676;
+    font-size: 15px;
+    padding: 3px 0; }
+  .contacts article a {
+    text-decoration: none;
+    color: #F0542D;
+    font-size: 15px;
+    transition: all 0.3s; }
+    .contacts article a:hover {
+      color: #767676; }
+
+/*# sourceMappingURL=contacts.css.map */

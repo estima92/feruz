@@ -4,12 +4,21 @@
   height: 500px;
   div {
     height: 100%;
+    h1 {
+      color: white;
+      font-size: 60px;
+      text-align: center;
+    }
     &.first-slide {
       background-color: rgba(0, 0, 0, 0);
       background-repeat: no-repeat;
       background-image: url("/images/bg_slider-clean1.jpg");
       background-size: cover;
       background-position: center center;
+      @include flexbox();
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
     }
     &.second-slide {
       background-color: rgba(0, 0, 0, 0);
@@ -17,6 +26,10 @@
       background-image: url("/images/slider2.png");
       background-size: cover;
       background-position: center center;
+      @include flexbox();
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
     }
     &.third-slide {
       background-color: rgba(0, 0, 0, 0);
@@ -24,6 +37,10 @@
       background-image: url("/images/slider3.png");
       background-size: cover;
       background-position: center center;
+      @include flexbox();
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
     }
     &.fourth-slide {
       background-color: rgba(0, 0, 0, 0);
@@ -31,6 +48,10 @@
       background-image: url("/images/slider4.png");
       background-size: cover;
       background-position: center center;
+      @include flexbox();
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -126,6 +147,7 @@
 }
 .services article {
   display: inline-block;
+  vertical-align: top;
   width: 33%;
   padding: 20px;
   box-sizing: border-box;

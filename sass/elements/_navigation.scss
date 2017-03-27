@@ -1,5 +1,14 @@
 @import "../mixins";
 @import "../constants";
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  background: white;
+}
+nav {
+  width: 100%;
+  z-index: 10;
+}
 .nav-list {
   height: 50px;
   li {

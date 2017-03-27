@@ -1,0 +1,27 @@
+.container {
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1100px; } }
+
+.about {
+  padding-bottom: 60px; }
+  .about p {
+    padding-top: 10px; }
+
+.about-header {
+  position: relative;
+  padding: 60px 0 25px 0;
+  text-align: center;
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 30px;
+  color: #364352; }
+
+/*# sourceMappingURL=about.css.map */
