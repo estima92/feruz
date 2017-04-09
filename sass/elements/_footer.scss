@@ -39,6 +39,10 @@ footer {
     .form {
       width: 25%;
       display: inline-block;
+      p, i {
+        color: white;
+        font-size: 14px;
+      }
       input,textarea {
         background: none;
         color: #D8D8D8;

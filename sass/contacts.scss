@@ -12,30 +12,36 @@
   margin-bottom: 30px;
   color: $section_header_color;
 }
-.contacts article {
-  display: inline-block;
-  vertical-align: top;
-  width: 33%;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  i {
-    color: $orange_text;
-    margin-bottom: 5px;
-  }
-  p {
+.contacts-body {
+  @include flexbox();
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap-reverse;
+  article {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
-    color: $gray_text;
-    font-size: 15px;
-    padding: 3px 0;
-  }
-  a {
-    text-decoration: none;
-    color: $orange_text;
-    font-size: 15px;
-    transition: all 0.3s;
-    &:hover {
+    i {
+      color: $orange_text;
+      margin-bottom: 5px;
+    }
+    p {
+      text-align: center;
       color: $gray_text;
+      font-size: 15px;
+      padding: 3px 0;
+    }
+    a {
+      text-decoration: none;
+      color: $orange_text;
+      font-size: 15px;
+      transition: all 0.3s;
+      &:hover {
+        color: $gray_text;
+      }
     }
   }
 }

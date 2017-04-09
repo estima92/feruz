@@ -48,12 +48,12 @@
 .product a.donwload-link {
   display: inline-block;
   margin-top: 10px;
-  color: #F0542D;
-  border: 2px solid #F0542D;
+  color: #0f76f5;
+  border: 2px solid #0f76f5;
   padding: 10px 20px;
   transition: all .3s; }
   .product a.donwload-link:hover {
-    background: #F0542D;
+    background: #0f76f5;
     color: white; }
 
 /*# sourceMappingURL=products.css.map */

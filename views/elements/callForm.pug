@@ -1,0 +1,32 @@
+form.form#sendmail
+    h2 Свяжитесь с нами
+    input(type="text" name="name" placeholder="Имя" minlength=3 required)
+    input(type="email" name="email" placeholder="email" minlength=3 required)
+    textarea(name="desc" placeholder="lorem ipsum" minlength=5 required)
+    button.btn.center-block(type="submit") Отправить заявку
+
+script.
+  $(function () {
+    $("#sendmail").submit(function (e) {
+      var self = $(this);
+      e.preventDefault();
+
+      var fio = self.find('input[name="name"]').val();
+      var email = self.find('input[name="email"]').val();
+      var message = self.find('textarea').val();
+      var data = {"fio": fio, "email": email, "message": message};
+      console.log(data);
+            $.ajax({
+                url: "/sendmail",
+                type: 'post',
+                data: data,
+                success: function (data) {
+                    self.empty().append(data);
+                }
+            });
+            var spinner = ' <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i> '
+            self.empty().append(spinner);
+          });
+  });
+
+

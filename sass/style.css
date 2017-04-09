@@ -46,7 +46,7 @@ header {
           display: inline-block;
           height: 100%; }
         header .header-container .header-contact .header-contact-mail i, header .header-container .header-contact .header-contact-phone i {
-          color: #F0542D;
+          color: #0f76f5;
           padding-right: 10px; }
         header .header-container .header-contact .header-contact-mail p, header .header-container .header-contact .header-contact-phone p {
           display: inline-block;
@@ -55,7 +55,7 @@ header {
           header .header-container .header-contact .header-contact-mail p a, header .header-container .header-contact .header-contact-phone p a {
             text-decoration: none;
             transition: color .3s;
-            color: #F0542D;
+            color: #0f76f5;
             font-size: 17px;
             font-weight: 500; }
             header .header-container .header-contact .header-contact-mail p a:hover, header .header-container .header-contact .header-contact-phone p a:hover {
@@ -68,7 +68,10 @@ header {
 
 nav {
   width: 100%;
-  z-index: 10; }
+  z-index: 10;
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 .nav-list {
   height: 50px; }
@@ -78,8 +81,8 @@ nav {
     height: 100%;
     box-sizing: border-box; }
     .nav-list li:hover, .nav-list li:focus, .nav-list li.active {
-      color: #F0542D;
-      border-bottom: 3px solid #F0542D; }
+      color: #0f76f5;
+      border-bottom: 3px solid #0f76f5; }
     .nav-list li a {
       color: #4A4F55;
       text-decoration: none;
@@ -236,6 +239,9 @@ footer {
     footer .container .form {
       width: 25%;
       display: inline-block; }
+      footer .container .form p, footer .container .form i {
+        color: white;
+        font-size: 14px; }
       footer .container .form input, footer .container .form textarea {
         background: none;
         color: #D8D8D8;
