@@ -133,7 +133,7 @@
     padding-top: 40px;
   }
   article {
-    width: 33%;
+    width: 25%;
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
@@ -141,6 +141,7 @@
       font-size: 15px;
       color: #4A4F55;
       padding-top: 10px;
+      padding-right: 10px;
     }
   }
 }
@@ -253,6 +254,15 @@
     margin: 10px 0;
     font-size: 13px;
     color: #4A4F55;
+  }
+}
+section.ourCustomers {
+  .customers {
+    @include flexbox();
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
   }
 }
 .map {

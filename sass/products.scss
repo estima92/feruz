@@ -50,6 +50,7 @@
     border: 2px solid $orange_text;
     padding: 10px 20px;
     transition: all .3s;
+    text-decoration: none;
     &:hover {
       background: $orange_text;
       color: white;

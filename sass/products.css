@@ -51,7 +51,8 @@
   color: #0f76f5;
   border: 2px solid #0f76f5;
   padding: 10px 20px;
-  transition: all .3s; }
+  transition: all .3s;
+  text-decoration: none; }
   .product a.donwload-link:hover {
     background: #0f76f5;
     color: white; }
