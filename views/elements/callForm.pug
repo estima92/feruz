@@ -1,8 +1,10 @@
 form.form#sendmail
     h2 Свяжитесь с нами
     input(type="text" name="name" placeholder="Имя" minlength=3 required)
-    input(type="email" name="email" placeholder="email" minlength=3 required)
-    textarea(name="desc" placeholder="lorem ipsum" minlength=5 required)
+    input(type="text" name="company" placeholder="Компания" minlength=3 required)
+    input(type="tel" name="phone" placeholder="Телефон" minlength=3 required)
+    input(type="email" name="email" placeholder="Email" minlength=3 required)
+    textarea(name="desc" placeholder="Задайте интересующий вас вопрос" minlength=5 required)
     button.btn.center-block(type="submit") Отправить заявку
 
 script.
@@ -12,9 +14,11 @@ script.
       e.preventDefault();
 
       var fio = self.find('input[name="name"]').val();
+      var company = self.find('input[name="company"]').val();
+      var phone = self.find('input[name="phone"]').val();
       var email = self.find('input[name="email"]').val();
       var message = self.find('textarea').val();
-      var data = {"fio": fio, "email": email, "message": message};
+      var data = {"fio": fio, "company": company, "phone": phone,"email": email, "message": message};
       console.log(data);
             $.ajax({
                 url: "/sendmail",

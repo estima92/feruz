@@ -13,18 +13,21 @@
     margin-bottom: 30px;
     color: $section_header_color;
   }
-  div {
+  div.product-content {
     @include flexbox();
     flex-flow: row wrap;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     .product-desc {
       display: inline-block;
       width: 40%;
     }
+    table, th, td {
+      border: 1px solid black;
+    }
     .table {
       display: inline-block;
-      width: 60%;
+      width: 50%;
       table {
         width: 100%;
         text-align: center;
@@ -45,7 +48,7 @@
   }
   a.donwload-link {
     display: inline-block;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
     color: $orange_text;
     border: 2px solid $orange_text;
     padding: 10px 20px;

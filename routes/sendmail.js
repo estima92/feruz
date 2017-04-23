@@ -26,6 +26,8 @@ router.post('/', function(req, res) {
         subject: 'Обратный звонок',
         text: `Новая заявка на обратный звонок!
         ФИО: ${req.body.fio}
+        Компания\физ-лицо: ${req.body.company}
+        Телефон: ${req.body.phone}
         Email: ${req.body.email}
         Сообщение: ${req.body.message}`
     };

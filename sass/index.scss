@@ -106,7 +106,7 @@
       color: rgb(128, 128, 128);
     }
   }
-  .first {
+  .first, .third {
     padding-top: 50px;
     top: -100px;
     height: 250px;
@@ -115,9 +115,6 @@
     padding-top: 70px;
     top: -100px;
     height: 250px;
-  }
-  .third {
-    top: -100px;
   }
 }
 
@@ -202,20 +199,26 @@
   }
 }
 .gallery-content {
+  width: 100%;
+  margin-bottom: 25px;
   @include flexbox();
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  img {
-    @media (min-width: $screen-sm-min) {
-      width: 50%;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  div {
+    padding-right: 20px;
+    img {
+      height: 100%;
     }
-    @media (min-width: $screen-md-min) {
-      width: 33%;
-    }
-    @media (min-width: $screen-lg-min) {
-      width: 25%;
-    }
+    //@media (min-width: $screen-sm-min) {
+    //  width: 50%;
+    //}
+    //@media (min-width: $screen-md-min) {
+    //  width: 33%;
+    //}
+    //@media (min-width: $screen-lg-min) {
+    //  width: 25%;
+    //}
   }
 }
 .about-us {
@@ -260,9 +263,12 @@ section.ourCustomers {
   .customers {
     @include flexbox();
     flex-flow: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: 30px;
+    img {
+      width: 13%;
+    }
   }
 }
 .map {
