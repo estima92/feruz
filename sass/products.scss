@@ -20,7 +20,13 @@
     justify-content: space-between;
     .product-desc {
       display: inline-block;
-      width: 40%;
+      text-align: justify;
+      width: 45%;
+      font-size: 13px;
+      img {
+        width: 100%;
+        margin-bottom: 5px;
+      }
     }
     table, th, td {
       border: 1px solid black;
